@@ -1,0 +1,20 @@
+scheduler {
+
+  pollInterval = 1 minute
+
+  maxConcurrentRequests = 10
+
+  probes: [
+    eu-central-1 {
+      host = eu-central-1.probe.aws.net
+    }
+
+    us-east-1 {
+      host = us-east-1.probe.aws.net
+    }
+
+    ap-southeast-2 {
+      host = ap-southeast-2.probe.aws.net
+    }
+  ]
+}

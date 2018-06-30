@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "ResponseTimeLessThan": {
+        "duration": {
+          "length": 500,
+          "unit": "milliseconds"
+        }
+      }
+    },
+    {
+      "StatusCodeEquals": {
+        "code": 200
+      }
+    },
+    {
+      "CheckTlsStillValid": {
+        "numDays": 80
+      }
+    }
+  ],
+  "id": "my-uuid-9517",
+  "interval": {
+    "length": 5,
+    "unit": "seconds"
+  },
+  "lastRun": "2018-05-13T19:42:09.061+02:00[Europe/Berlin]",
+  "probes": [
+    {
+      "value": "local-1"
+    }
+  ],
+  "request": {
+    "headers": {},
+    "url": "https://google.com"
+  }
+}
